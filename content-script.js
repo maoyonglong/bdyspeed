@@ -29,9 +29,6 @@ document.addEventListener('DOMContentLoaded', function()
 		var script = document.createElement('script');
 		script.type = 'text/javascript';
 		script.appendChild(document.createTextNode(code));
-		script.onload = function(){
-			this.parentNode.removeChild(this);
-		};
 		document.body.appendChild(script);
 		setTimeout(function(){
 			script.parentNode.removeChild(script)
