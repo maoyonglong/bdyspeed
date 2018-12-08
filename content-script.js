@@ -1,10 +1,6 @@
-document.addEventListener('DOMContentLoaded', function()
-{
+document.addEventListener('DOMContentLoaded', function(){
     var video = {
 		changeRate: function(rate){
-			if(this.video === ''){
-				this.getVideo();
-			}	
 			injectChangeRateJs(rate);
 		}
 	};
